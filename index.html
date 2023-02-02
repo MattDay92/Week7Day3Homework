@@ -16,16 +16,20 @@
 </head>
 
 <body>
-    <h1 class="text-center">Welcome to Pokedex!</h1>
+    <h1 class="text-center my-5">Welcome to Pokedex!</h1>
 
-    <div class="container">
-        <div class="mb-3">
-            <form>
-                <input type="form" class="form-control" id="pokeForm" placeholder="Pokemon Name">
-                <button type="button" class="btn btn-primary" id="submitButton">Get Pokemon Info</button>
+    <div class="container my-5">
+    <div class="row">
+        <div class="col mb-3 d-flex justify-content-center text-center">
+            <form id="myForm" >
+                <input type="text" class='form-control my-2' name="pokemon" placeholder="Search for Pokemon">
+                <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
     </div>
+    </div>
+
+        <div class="container pokeCard my-5 d-flex justify-content-center"></div>
 
 
 
@@ -33,10 +37,12 @@
 
 
 
+
+    <script src="main.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+
 </body>
 
 </html>
